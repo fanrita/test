@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.535" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-09-29T19:14:53" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Sections" timestamp="2019-09-29T19:14:53" tests="5" failures="0" time="10.535">
+    <testcase name="Sections should verify section title" time="3.777" classname="should verify section title">
+    </testcase>
+    <testcase name="Sections should be possible move tile from Applied to Interviewing section" time="1.225" classname="should be possible move tile from Applied to Interviewing section">
+    </testcase>
+    <testcase name="Sections should be possible move tile from Hired to Interviewing section" time="2.298" classname="should be possible move tile from Hired to Interviewing section">
+    </testcase>
+    <testcase name="Sections should be possible move tile from Applied to Hired section" time="1.933" classname="should be possible move tile from Applied to Hired section">
+    </testcase>
+    <testcase name="Sections should be possible move tile from Hired to Applied section" time="1.302" classname="should be possible move tile from Hired to Applied section">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.519" tests="1" failures="2">
+  <testsuite name="Root Suite" timestamp="2019-09-29T19:09:51" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Tile" timestamp="2019-09-29T19:09:51" tests="1" failures="2" time="4.519">
+    <testcase name="Tile should verify tile name, city, image" time="0" classname="should verify tile name, city, image">
+      <failure message="Blocked a frame with origin &quot;http://localhost:5000&quot; from accessing a cross-origin frame." type="SecurityError"><![CDATA[Error: Blocked a frame with origin "http://localhost:5000" from accessing a cross-origin frame.
+    at setWindowDocumentProps (http://localhost:5000/__cypress/runner/cypress_runner.js:79573:42)
+    at HTMLIFrameElement.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80173:11)
+    at HTMLIFrameElement.dispatch (http://localhost:5000/__cypress/runner/cypress_runner.js:16545:27)
+    at HTMLIFrameElement.elemData.handle (http://localhost:5000/__cypress/runner/cypress_runner.js:16357:28)]]></failure>
+    </testcase>
+    <testcase name="Tile &quot;after all&quot; hook for &quot;should verify tile name, city, image&quot;" time="4.519" classname="&quot;after all&quot; hook for &quot;should verify tile name, city, image&quot;">
+      <failure message="Cypress command timeout of &apos;4000ms&apos; exceeded.
+
+Because this error occurred during a &apos;after all&apos; hook we are skipping the remaining tests in the current suite: &apos;Tile&apos;" type="Error"><![CDATA[Error: Cypress command timeout of '4000ms' exceeded.
+
+Because this error occurred during a 'after all' hook we are skipping the remaining tests in the current suite: 'Tile'
+    at http://localhost:5000/__cypress/runner/cypress_runner.js:82978:25]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,33 @@
+{
+  "name": "-y",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:open:local": "yarn cypress:open --env configFile=local",
+    "cypress:run:local": "yarn cypress:run --env configFile=local",
+    "cypress:open:docker": "yarn cypress:open --env configFile=docker",
+    "cypress:run:docker": "yarn cypress:run --env configFile=docker"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.4.1",
+    "cypress-cucumber-preprocessor": "^1.16.0",
+    "cypress-multi-reporters": "^1.2.1",
+    "mocha": "^6.2.1",
+    "mocha-junit-reporters": "^1.23.6",
+    "mochawesome": "^4.1.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

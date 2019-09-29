@@ -1,0 +1,360 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 12,
+    "passes": 1,
+    "pending": 0,
+    "failures": 11,
+    "start": "2019-09-29T19:09:18.996Z",
+    "end": "2019-09-29T19:09:24.447Z",
+    "duration": 5451,
+    "testsRegistered": 12,
+    "passPercent": 8.333333333333332,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8084dc1c-f06e-4f6c-bbcf-d817e262b15d",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "41d89525-dd60-448f-bd09-b599e44ad543",
+          "title": "Filters",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be possible apply filter by name (example #1)",
+              "fullTitle": "Filters should be possible apply filter by name (example #1)",
+              "timedOut": null,
+              "duration": 1456,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "6122f34b-8c22-454c-b0ad-2807cc6cb5bf",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible apply filter by name (example #2)",
+              "fullTitle": "Filters should be possible apply filter by name (example #2)",
+              "timedOut": null,
+              "duration": 610,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at setWindowDocumentProps (http://localhost:5000/__cypress/runner/cypress_runner.js:79573:42)\n    at HTMLIFrameElement.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80173:11)\n    at HTMLIFrameElement.dispatch (http://localhost:5000/__cypress/runner/cypress_runner.js:16545:27)\n    at HTMLIFrameElement.elemData.handle (http://localhost:5000/__cypress/runner/cypress_runner.js:16357:28)",
+                "diff": null
+              },
+              "uuid": "53f51b6e-6073-4b08-8df2-f597239af623",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible apply filter by name (example #3)",
+              "fullTitle": "Filters should be possible apply filter by name (example #3)",
+              "timedOut": null,
+              "duration": 431,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at jquery (http://localhost:5000/__cypress/runner/cypress_runner.js:77103:46)\n    at Object.getRemotejQueryInstance (http://localhost:5000/__cypress/runner/cypress_runner.js:77108:22)\n    at Context.thenFn (http://localhost:5000/__cypress/runner/cypress_runner.js:71849:24)\n    at Context.then (http://localhost:5000/__cypress/runner/cypress_runner.js:72229:21)\n    at Context.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80256:21)\n    at http://localhost:5000/__cypress/runner/cypress_runner.js:79783:33\n    at tryCatcher (http://localhost:5000/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (http://localhost:5000/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (http://localhost:5000/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromiseCtx (http://localhost:5000/__cypress/runner/cypress_runner.js:116992:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:5000/__cypress/runner/cypress_runner.js:113692:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "1b14b8f5-d06f-4b56-b047-e7b61b9f9e0b",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible apply filter by name and city (example #1)",
+              "fullTitle": "Filters should be possible apply filter by name and city (example #1)",
+              "timedOut": null,
+              "duration": 314,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at jquery (http://localhost:5000/__cypress/runner/cypress_runner.js:77103:46)\n    at Object.getRemotejQueryInstance (http://localhost:5000/__cypress/runner/cypress_runner.js:77108:22)\n    at Context.thenFn (http://localhost:5000/__cypress/runner/cypress_runner.js:71849:24)\n    at Context.then (http://localhost:5000/__cypress/runner/cypress_runner.js:72229:21)\n    at Context.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80256:21)\n    at http://localhost:5000/__cypress/runner/cypress_runner.js:79783:33\n    at tryCatcher (http://localhost:5000/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (http://localhost:5000/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (http://localhost:5000/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromiseCtx (http://localhost:5000/__cypress/runner/cypress_runner.js:116992:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:5000/__cypress/runner/cypress_runner.js:113692:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "40506ba0-cd65-456f-a172-4a6d336f5930",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible apply filter by name and city (example #2)",
+              "fullTitle": "Filters should be possible apply filter by name and city (example #2)",
+              "timedOut": null,
+              "duration": 435,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at jquery (http://localhost:5000/__cypress/runner/cypress_runner.js:77103:46)\n    at Object.getRemotejQueryInstance (http://localhost:5000/__cypress/runner/cypress_runner.js:77108:22)\n    at Context.thenFn (http://localhost:5000/__cypress/runner/cypress_runner.js:71849:24)\n    at Context.then (http://localhost:5000/__cypress/runner/cypress_runner.js:72229:21)\n    at Context.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80256:21)\n    at http://localhost:5000/__cypress/runner/cypress_runner.js:79783:33\n    at tryCatcher (http://localhost:5000/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (http://localhost:5000/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (http://localhost:5000/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromiseCtx (http://localhost:5000/__cypress/runner/cypress_runner.js:116992:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:5000/__cypress/runner/cypress_runner.js:113692:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "c8543778-2fe0-4177-8afc-a7183e286c7b",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible apply filter by name and city (example #3)",
+              "fullTitle": "Filters should be possible apply filter by name and city (example #3)",
+              "timedOut": null,
+              "duration": 268,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at jquery (http://localhost:5000/__cypress/runner/cypress_runner.js:77103:46)\n    at Object.getRemotejQueryInstance (http://localhost:5000/__cypress/runner/cypress_runner.js:77108:22)\n    at Context.thenFn (http://localhost:5000/__cypress/runner/cypress_runner.js:71849:24)\n    at Context.then (http://localhost:5000/__cypress/runner/cypress_runner.js:72229:21)\n    at Context.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80256:21)\n    at http://localhost:5000/__cypress/runner/cypress_runner.js:79783:33\n    at tryCatcher (http://localhost:5000/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (http://localhost:5000/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (http://localhost:5000/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromiseCtx (http://localhost:5000/__cypress/runner/cypress_runner.js:116992:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:5000/__cypress/runner/cypress_runner.js:113692:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "12a9b3e2-ddf3-474f-b4e0-c7d9c7bd2ec5",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be show empty results if filter by invalid name or invalid city (example #1)",
+              "fullTitle": "Filters should be show empty results if filter by invalid name or invalid city (example #1)",
+              "timedOut": null,
+              "duration": 272,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at jquery (http://localhost:5000/__cypress/runner/cypress_runner.js:77103:46)\n    at Object.getRemotejQueryInstance (http://localhost:5000/__cypress/runner/cypress_runner.js:77108:22)\n    at Context.thenFn (http://localhost:5000/__cypress/runner/cypress_runner.js:71849:24)\n    at Context.then (http://localhost:5000/__cypress/runner/cypress_runner.js:72229:21)\n    at Context.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80256:21)\n    at http://localhost:5000/__cypress/runner/cypress_runner.js:79783:33\n    at tryCatcher (http://localhost:5000/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (http://localhost:5000/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (http://localhost:5000/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromiseCtx (http://localhost:5000/__cypress/runner/cypress_runner.js:116992:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:5000/__cypress/runner/cypress_runner.js:113692:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "ec139888-2da6-44a2-936c-1cead3a7f479",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be show empty results if filter by invalid name or invalid city (example #2)",
+              "fullTitle": "Filters should be show empty results if filter by invalid name or invalid city (example #2)",
+              "timedOut": null,
+              "duration": 235,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at jquery (http://localhost:5000/__cypress/runner/cypress_runner.js:77103:46)\n    at Object.getRemotejQueryInstance (http://localhost:5000/__cypress/runner/cypress_runner.js:77108:22)\n    at Context.thenFn (http://localhost:5000/__cypress/runner/cypress_runner.js:71849:24)\n    at Context.then (http://localhost:5000/__cypress/runner/cypress_runner.js:72229:21)\n    at Context.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80256:21)\n    at http://localhost:5000/__cypress/runner/cypress_runner.js:79783:33\n    at tryCatcher (http://localhost:5000/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (http://localhost:5000/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (http://localhost:5000/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromiseCtx (http://localhost:5000/__cypress/runner/cypress_runner.js:116992:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:5000/__cypress/runner/cypress_runner.js:113692:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "cfab8b5a-d306-4ad3-8462-1f270f44d9c6",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be show empty results if filter by invalid name or invalid city (example #3)",
+              "fullTitle": "Filters should be show empty results if filter by invalid name or invalid city (example #3)",
+              "timedOut": null,
+              "duration": 239,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at jquery (http://localhost:5000/__cypress/runner/cypress_runner.js:77103:46)\n    at Object.getRemotejQueryInstance (http://localhost:5000/__cypress/runner/cypress_runner.js:77108:22)\n    at Context.thenFn (http://localhost:5000/__cypress/runner/cypress_runner.js:71849:24)\n    at Context.then (http://localhost:5000/__cypress/runner/cypress_runner.js:72229:21)\n    at Context.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80256:21)\n    at http://localhost:5000/__cypress/runner/cypress_runner.js:79783:33\n    at tryCatcher (http://localhost:5000/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (http://localhost:5000/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (http://localhost:5000/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromiseCtx (http://localhost:5000/__cypress/runner/cypress_runner.js:116992:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:5000/__cypress/runner/cypress_runner.js:113692:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "351d1a2f-0c47-4a67-b5bd-a045676c1832",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be show empty results if filter by invalid name or invalid city (example #4)",
+              "fullTitle": "Filters should be show empty results if filter by invalid name or invalid city (example #4)",
+              "timedOut": null,
+              "duration": 259,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at jquery (http://localhost:5000/__cypress/runner/cypress_runner.js:77103:46)\n    at Object.getRemotejQueryInstance (http://localhost:5000/__cypress/runner/cypress_runner.js:77108:22)\n    at Context.thenFn (http://localhost:5000/__cypress/runner/cypress_runner.js:71849:24)\n    at Context.then (http://localhost:5000/__cypress/runner/cypress_runner.js:72229:21)\n    at Context.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80256:21)\n    at http://localhost:5000/__cypress/runner/cypress_runner.js:79783:33\n    at tryCatcher (http://localhost:5000/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (http://localhost:5000/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (http://localhost:5000/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromiseCtx (http://localhost:5000/__cypress/runner/cypress_runner.js:116992:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:5000/__cypress/runner/cypress_runner.js:113692:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "51591b46-2329-4dce-9221-5f60f7a2ea95",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible apply filter by city",
+              "fullTitle": "Filters should be possible apply filter by city",
+              "timedOut": null,
+              "duration": 252,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at jquery (http://localhost:5000/__cypress/runner/cypress_runner.js:77103:46)\n    at Object.getRemotejQueryInstance (http://localhost:5000/__cypress/runner/cypress_runner.js:77108:22)\n    at Context.thenFn (http://localhost:5000/__cypress/runner/cypress_runner.js:71849:24)\n    at Context.then (http://localhost:5000/__cypress/runner/cypress_runner.js:72229:21)\n    at Context.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80256:21)\n    at http://localhost:5000/__cypress/runner/cypress_runner.js:79783:33\n    at tryCatcher (http://localhost:5000/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (http://localhost:5000/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (http://localhost:5000/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromiseCtx (http://localhost:5000/__cypress/runner/cypress_runner.js:116992:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:5000/__cypress/runner/cypress_runner.js:113692:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "5ab67609-deb6-4521-8cd7-f5406091be59",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible to clear filter",
+              "fullTitle": "Filters should be possible to clear filter",
+              "timedOut": null,
+              "duration": 230,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "SecurityError: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.",
+                "estack": "Error: Blocked a frame with origin \"http://localhost:5000\" from accessing a cross-origin frame.\n    at jquery (http://localhost:5000/__cypress/runner/cypress_runner.js:77103:46)\n    at Object.getRemotejQueryInstance (http://localhost:5000/__cypress/runner/cypress_runner.js:77108:22)\n    at Context.thenFn (http://localhost:5000/__cypress/runner/cypress_runner.js:71849:24)\n    at Context.then (http://localhost:5000/__cypress/runner/cypress_runner.js:72229:21)\n    at Context.<anonymous> (http://localhost:5000/__cypress/runner/cypress_runner.js:80256:21)\n    at http://localhost:5000/__cypress/runner/cypress_runner.js:79783:33\n    at tryCatcher (http://localhost:5000/__cypress/runner/cypress_runner.js:118962:23)\n    at Promise._settlePromiseFromHandler (http://localhost:5000/__cypress/runner/cypress_runner.js:116898:31)\n    at Promise._settlePromise (http://localhost:5000/__cypress/runner/cypress_runner.js:116955:18)\n    at Promise._settlePromiseCtx (http://localhost:5000/__cypress/runner/cypress_runner.js:116992:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:5000/__cypress/runner/cypress_runner.js:113692:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113697:10)\n    at Async.drainQueues (http://localhost:5000/__cypress/runner/cypress_runner.js:113571:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "267bef4b-3850-4e67-b676-c0331304c92c",
+              "parentUUID": "41d89525-dd60-448f-bd09-b599e44ad543",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6122f34b-8c22-454c-b0ad-2807cc6cb5bf"
+          ],
+          "failures": [
+            "53f51b6e-6073-4b08-8df2-f597239af623",
+            "1b14b8f5-d06f-4b56-b047-e7b61b9f9e0b",
+            "40506ba0-cd65-456f-a172-4a6d336f5930",
+            "c8543778-2fe0-4177-8afc-a7183e286c7b",
+            "12a9b3e2-ddf3-474f-b4e0-c7d9c7bd2ec5",
+            "ec139888-2da6-44a2-936c-1cead3a7f479",
+            "cfab8b5a-d306-4ad3-8462-1f270f44d9c6",
+            "351d1a2f-0c47-4a67-b5bd-a045676c1832",
+            "51591b46-2329-4dce-9221-5f60f7a2ea95",
+            "5ab67609-deb6-4521-8cd7-f5406091be59",
+            "267bef4b-3850-4e67-b676-c0331304c92c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5001,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

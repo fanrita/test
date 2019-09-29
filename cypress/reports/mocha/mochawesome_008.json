@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-09-29T20:13:59.492Z",
+    "end": "2019-09-29T20:14:04.493Z",
+    "duration": 5001,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3508c190-f9b9-4563-bd99-71a12a606868",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9d0a26fd-3ddd-4dff-8b66-10ea64d66f68",
+          "title": "Sections",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should verify section title",
+              "fullTitle": "Sections should verify section title",
+              "timedOut": null,
+              "duration": 1335,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "0e74560e-55af-43a4-b32c-dd57f2fd022a",
+              "parentUUID": "9d0a26fd-3ddd-4dff-8b66-10ea64d66f68",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible move tile from Applied to Interviewing section",
+              "fullTitle": "Sections should be possible move tile from Applied to Interviewing section",
+              "timedOut": null,
+              "duration": 937,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "e41126d9-83a8-42d6-9f30-1e04c3ed864d",
+              "parentUUID": "9d0a26fd-3ddd-4dff-8b66-10ea64d66f68",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible move tile from Hired to Interviewing section",
+              "fullTitle": "Sections should be possible move tile from Hired to Interviewing section",
+              "timedOut": null,
+              "duration": 570,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "dc645bff-5805-4acc-ac5f-1d4a8f0e56f5",
+              "parentUUID": "9d0a26fd-3ddd-4dff-8b66-10ea64d66f68",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible move tile from Applied to Hired section",
+              "fullTitle": "Sections should be possible move tile from Applied to Hired section",
+              "timedOut": null,
+              "duration": 1227,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "4b7b12c7-1540-415d-9785-2bd5838f9a7c",
+              "parentUUID": "9d0a26fd-3ddd-4dff-8b66-10ea64d66f68",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should be possible move tile from Hired to Applied section",
+              "fullTitle": "Sections should be possible move tile from Hired to Applied section",
+              "timedOut": null,
+              "duration": 708,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => resolveAndRunBeforeHooks.call(this, scenario.tags))\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() => resolveAndRunAfterHooks.call(this, scenario.tags))\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7683c3f7-d43e-49f3-a091-34c49965c635",
+              "parentUUID": "9d0a26fd-3ddd-4dff-8b66-10ea64d66f68",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0e74560e-55af-43a4-b32c-dd57f2fd022a",
+            "e41126d9-83a8-42d6-9f30-1e04c3ed864d",
+            "dc645bff-5805-4acc-ac5f-1d4a8f0e56f5",
+            "4b7b12c7-1540-415d-9785-2bd5838f9a7c",
+            "7683c3f7-d43e-49f3-a091-34c49965c635"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4777,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

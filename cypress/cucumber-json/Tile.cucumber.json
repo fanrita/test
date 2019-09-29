@@ -1,0 +1,63 @@
+[
+  {
+    "description": "  I want to see name, city, image on tile",
+    "keyword": "Feature",
+    "name": "Tile",
+    "line": 1,
+    "id": "tile",
+    "tags": [],
+    "uri": "Tile.feature",
+    "elements": [
+      {
+        "id": "tile;should-verify-tile-name,-city,-image",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "should verify tile name, city, image",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Application page was opened",
+            "result": {
+              "status": "passed",
+              "duration": 1021000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Should see name \"emma stewart\" on \"emma\" tile",
+            "result": {
+              "status": "passed",
+              "duration": 132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Should see city \"worcester\" on \"emma\" tile",
+            "result": {
+              "status": "passed",
+              "duration": 71000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Should see photo on \"emma\" tile",
+            "result": {
+              "status": "passed",
+              "duration": 70000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
